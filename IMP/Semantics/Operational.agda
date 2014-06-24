@@ -171,7 +171,7 @@ Bexp-confluence (a₀ ≤ a₁) (≤-t ⟶₀ ⟶₁ n₀≤n₁) (≤-f ⟶₀�
     = ⊥-elim (n₀′≰n₁′ n₀≤n₁)
 Bexp-confluence (a₀ ≤ a₁) (≤-f ⟶₀ ⟶₁ n₀≰n₁) (≤-t ⟶₀′ ⟶₁′ n₀′≤n₁′)
   rewrite Aexp-confluence a₀ ⟶₀ ⟶₀′ | Aexp-confluence a₁ ⟶₁ ⟶₁′
-    = ⊥-elim(n₀≰n₁ n₀′≤n₁′)
+    = ⊥-elim (n₀≰n₁ n₀′≤n₁′)
 Bexp-confluence (_ ≤ _) (≤-f _ _ _) (≤-f _ _ _) = refl
 Bexp-confluence (¬ _) (¬-t _) (¬-t _) = refl
 Bexp-confluence (¬ b) (¬-t ⟶) (¬-f ⟶′) = Bexp-confluence b ⟶′ ⟶
